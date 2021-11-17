@@ -18,9 +18,17 @@ public abstract class Funcionario {
 
     public double ganhoAnual(){
          return  this.salario * 12;
-    };
+    }
 
     public abstract void  exibirDados();
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
 }
 
 
