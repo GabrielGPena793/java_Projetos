@@ -13,6 +13,8 @@ public class Main {
         impressora.setFolhasDisponiveis(100);
         impressora.imprimir("Imprimindo o texto em uma folha A4");
         System.out.println(impressora.getFolhasDisponiveis());
+
+        System.out.println(impressora.getDataFabricacao());
     }
 
 }
