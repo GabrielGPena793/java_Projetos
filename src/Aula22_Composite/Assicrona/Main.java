@@ -1,4 +1,4 @@
-package Aula22_Composite;
+package Aula22_Composite.Assicrona;
 
 public class Main {
 
