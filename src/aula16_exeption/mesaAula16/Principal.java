@@ -10,7 +10,7 @@ public class Principal {
             Paciente paciente = new Paciente("pepi", "barros","sei lá", LocalDate.of(2021,11,28));
             System.out.println(paciente.getDataInternacao());
 
-            paciente.darAlta(LocalDate.of(2020,12,30));
+            paciente.darAlta(LocalDate.of(2021,12,30));
 
         }
         catch (PacienteExeption pacienteExeption){

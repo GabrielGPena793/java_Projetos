@@ -35,8 +35,8 @@ public class Paciente {
 
     public void darAlta(LocalDate dataAlta) throws PacienteExeption {
         if (dataAlta.isAfter(dataInternacao))
-            System.out.println("Ok");
-        else
             throw new PacienteExeption("Não pode!");
+        else
+            System.out.println("Ok");
     }
 }
