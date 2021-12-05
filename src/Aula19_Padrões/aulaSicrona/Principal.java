@@ -1,6 +1,5 @@
 package Aula19_Padrões.aulaSicrona;
 
-import java.util.ArrayList;
 
 public class Principal {
 
@@ -11,8 +10,11 @@ public class Principal {
 
         empresa.addEmpregado(empregadoFactory.criarEmpregado("EMP-INT"));
         empresa.getListaEmpregados().get(0).setNome("jõao");
+        empresa.getListaEmpregados().get(0).setValorSalario(3000);
+
 
         empresa.mostrarArray();
+        System.out.println( empresa.getListaEmpregados().get(0).calcularSalario(8));
 
 
 

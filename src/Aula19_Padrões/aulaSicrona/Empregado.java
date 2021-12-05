@@ -39,4 +39,6 @@ public abstract class Empregado {
     public void setArquivo(String arquivo) {
         this.arquivo = arquivo;
     }
+
+    public  abstract void setValorSalario(double valor);
 }

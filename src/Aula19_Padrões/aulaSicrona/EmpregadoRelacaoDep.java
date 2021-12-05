@@ -18,11 +18,12 @@ public class EmpregadoRelacaoDep  extends Empregado{
         return (this.salarioMensal / 30 ) * dias;
     }
 
-    public double getSalarioMensal() {
-        return salarioMensal;
+    @Override
+    public   void setValorSalario(double valor) {
+       this.salarioMensal = valor;
     }
 
-    public void setSalarioMensal(double salarioMensal) {
-        this.salarioMensal = salarioMensal;
+    public double getSalarioMensal() {
+        return salarioMensal;
     }
 }
