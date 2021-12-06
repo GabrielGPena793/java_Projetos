@@ -8,16 +8,27 @@ public class Carrinho {
     private EstadoCarrinho estadoCarrinho;
     private List<Produto> produtos = new ArrayList<>();
 
-    public Carrinho(EstadoCarrinho estadoCarrinho) {
+    public Carrinho() {
         this.estadoCarrinho = new Vazio(this);
     }
 
+    public void addProduto(Produto produto){
+        produtos.add(produto);
+    }
     public EstadoCarrinho getEstadoCarrinho() {
         return estadoCarrinho;
     }
 
     public void setEstadoCarrinho(EstadoCarrinho estadoCarrinho) {
         this.estadoCarrinho = estadoCarrinho;
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 
     //=======================================================

@@ -11,7 +11,14 @@ public class Vazio implements EstadoCarrinho {
 
     @Override
     public void cancelarCarrinho() {
-        System.out.println("Não há produtos para cancelar, o carrinho está vazio");
+
+        if (carrinho.getProdutos().size() > 0){
+            irParaOProximoEstado();
+            carrinho.cancelarCarrinho();
+            carrinho.getProdutos().clear();
+        }else {
+            System.out.println("Não há produtos para cancelar, o carrinho está vazio");
+        }
     }
 
     @Override
@@ -22,6 +29,7 @@ public class Vazio implements EstadoCarrinho {
     @Override
     public void irParaOProximoEstado() {
         carrinho.setEstadoCarrinho( new Carregando(this.carrinho));
+        System.out.println("Carrinho foi para o estado Carregando!");
     }
 
     public Carrinho getCarrinho() {

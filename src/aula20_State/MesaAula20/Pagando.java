@@ -1,5 +1,7 @@
 package aula20_State.MesaAula20;
 
+import java.util.List;
+
 public class Pagando implements EstadoCarrinho {
 
     private Carrinho carrinho;
@@ -24,6 +26,7 @@ public class Pagando implements EstadoCarrinho {
     @Override
     public void irParaOProximoEstado() {
         carrinho.setEstadoCarrinho(new Fechado(this.carrinho));
+        System.out.println("Carrinho foi para o estado de fechado!");
     }
 
     public Carrinho getCarrinho() {
